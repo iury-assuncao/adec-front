@@ -13,10 +13,10 @@ declare module "react-router" {
 type Params = {
   "/": {};
   "/dashboard": {};
-  "/financeiro": {};
-  "/membros": {};
-  "/membros/:membroId": {
-    "membroId": string;
+  "/financial": {};
+  "/members": {};
+  "/members/:memberId": {
+    "memberId": string;
   };
   "/*?": {};
 };

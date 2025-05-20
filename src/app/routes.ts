@@ -9,11 +9,11 @@ import {
 export default [
   layout('./layout/Layout.tsx', [
     route('/dashboard', './pages/Dashboard.tsx'),
-    route('/financeiro', './pages/Financeiro.tsx'),
+    route('/financial', './pages/Financial.tsx'),
 
-    ...prefix('/membros', [
-      index('./pages/Membros/MembrosList.tsx'),
-      route(':membroId', './pages/Membros/MembroDetalhe.tsx'),
+    ...prefix('/members', [
+      index('./pages/Members/MembersList.tsx'),
+      route(':memberId', './pages/Members/MemberDetail.tsx'),
     ]),
   ]),
   route('*?', './pages/NotFound.tsx'),

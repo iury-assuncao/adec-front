@@ -20,10 +20,10 @@ export default function Layout() {
           <Link to="/dashboard" className={linkClasses('/dashboard')}>
             Dashboard
           </Link>
-          <Link to="/membros" className={linkClasses('/membros')}>
+          <Link to="/members" className={linkClasses('/members')}>
             Membros
           </Link>
-          <Link to="/financeiro" className={linkClasses('/financeiro')}>
+          <Link to="/financial" className={linkClasses('/financial')}>
             Financeiro
           </Link>
         </nav>

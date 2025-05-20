@@ -1,23 +1,23 @@
 import { useNavigate } from 'react-router';
 
-const membros = [
+const members = [
   { id: 1, nome: 'João Silva' },
   { id: 2, nome: 'Maria Oliveira' },
   { id: 3, nome: 'Carlos Souza' },
 ];
 
-export default function MembrosList() {
+export default function MembersList() {
   const navigate = useNavigate();
 
   const handleVerMais = (id: number) => {
-    navigate(`/membros/${id}`);
+    navigate(`/members/${id}`);
   };
 
   return (
     <div>
       <h1 className="text-3xl font-medium tracking-tight mb-6">Membros</h1>
       <ul className="space-y-4">
-        {membros.map((membro) => (
+        {members.map((membro) => (
           <li
             key={membro.id}
             className="bg-white rounded-lg shadow p-4 flex items-center justify-between"
