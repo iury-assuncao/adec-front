@@ -2,7 +2,7 @@ import { Outlet, Scripts, ScrollRestoration } from 'react-router';
 
 import '../index.css';
 
-export default function Root() {
+export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
@@ -12,11 +12,15 @@ export default function Root() {
         <title>EloChurch</title>
       </head>
       <body>
-        <Outlet />
+        {children}
 
         <ScrollRestoration />
         <Scripts />
       </body>
     </html>
   );
+}
+
+export default function Root() {
+  return <Outlet />;
 }
