@@ -8,7 +8,7 @@ import {
 
 export default [
   layout('./layout/Layout.tsx', [
-    route('/dashboard', './pages/Dashboard.tsx'),
+    route('/dashboard', './pages/Dashboard/Dashboard.tsx'),
     route('/financial', './pages/Financial.tsx'),
 
     ...prefix('/members', [
